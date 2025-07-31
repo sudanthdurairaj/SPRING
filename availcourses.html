@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+            td{
+                background-color: aliceblue;
+            }
+    
+            body{
+                padding: 50px;
+            }
+        </style>
+</head>
+<body>
+    <table border="1" align="center" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+             <th width="100">Course Id</th>
+             <th width="150">Course Name</th>
+             <th width="100">Trainer</th>
+             <th width="150">Duration in Weeks</th>
+        </tr>
+
+      <tbody align="center" id="coursetable"></tbody>   <!-- Request via api will displayed here (from server) -->
+    </table>
+
+    <script type="text/javascript">
+        window.onload = function()
+        {
+            showCourses();
+        };
+    </script>
+</body>
+</html> 
